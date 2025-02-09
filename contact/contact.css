@@ -1,0 +1,89 @@
+.page_header{
+    background: url(../img/practical2.jpg);
+}
+
+.contact_list{
+    width: fit-content;
+    display: flex;
+    gap: 3rem;
+    margin-inline: auto;
+
+}
+.contacts{
+    margin: 5rem 0;
+    padding: 0px 20px;
+}
+
+.contacts_container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+   
+
+}
+
+.contact_item{
+    color: black;
+    font-size: 1.7rem;
+    width: 5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: grid;
+    box-shadow: -10px -10px 15px #ffff,
+                10px 10px 15px #aeaec0;
+    place-items: center;
+    margin-bottom: 50px; 
+    
+}
+.contact_item:hover{
+    box-shadow: inset -10px -10px 15px #ffff,
+                inset 10px 10px 15px #aeaec0;
+}
+
+.address_details{
+    text-align: center;
+    
+}
+
+.adress_details h4{
+    margin: 3rem 0 1rem;
+    
+}
+
+.address_details h2{
+    margin-bottom: 1rem;
+    
+}
+li p{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+.address_details ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+iframe{
+    margin-top: 4rem;
+    height: 50rem;
+    width: 90rem;
+    
+}
+
+@media  screen and (max-width: 600px){
+   .contact_list{
+    margin-top: 5rem;
+    gap: 1.8rem;
+   }
+   iframe{
+
+    height: 40rem;
+    width: 35rem;
+    
+}
+}

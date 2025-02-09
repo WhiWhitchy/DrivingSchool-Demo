@@ -1,0 +1,549 @@
+section{
+    padding: 9rem 0rem ;
+    overflow-x: hidden;
+
+}
+
+.section_header{
+    text-align: center;
+   
+}
+
+.section_header h4{
+    margin-bottom: 0.5rem;
+}
+
+/*=====================HERO======================*/
+.hero{
+    min-height: 100vh;
+
+}
+
+body.dark .hero{
+    background: var(--Dark-mode-gradient);
+}
+
+.hero_container{
+    text-align: center;
+
+}
+
+.hero_content{
+    width: 100%;
+    margin-inline: auto;
+    display: grid;
+    text-align: center;
+    transition: all .3s ease-in-out;
+
+}
+
+.hero_content p{
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0px 19rem;
+    text-align: center;
+}
+
+.hero_cta{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero_images{
+    width: fit-content;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+    
+}
+.hero_image{
+    position: relative;
+    width: 14rem;
+    height: 25rem;
+    border-radius: 7rem;
+    overflow: hidden;
+    box-shadow: -10px -10px 15px #ffff,
+                10px 10px 15px #aeaec0;
+    border: 1px solid #aeaec0;
+    background: var(--main-color);
+}
+.hero_image img{
+    transition: all .3s ease-in-out;
+   position: relative;
+}
+.hero_image img:hover{
+    transform: scale(1.1);
+}
+.hero_image:nth-child(1),
+.hero_image:nth-child(5){
+    transform: translateY(-8rem);
+}
+
+.hero_image:nth-child(3){
+    transform: translateY(8rem);
+}
+
+/*=====================About======================*/
+.about{
+    background: var(--variant-gradient);
+    padding: 110px;
+}
+
+.about_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.about_left{
+    border-radius: 7rem;
+    overflow: hidden;
+    box-shadow: -10px -10px 15px #ffff,
+                10px 10px 15px #aeaec0;
+    transition: var(--transition);
+}
+
+.about_left:hover{
+    box-shadow: none;
+}
+.about_left img{
+    transition: all .3s ease-in-out;
+}
+.about_left img:hover{
+    transform: scale(1.1);
+}
+
+
+.about .section_header{
+    text-align: left;
+}
+.about_right p{
+    text-indent: 50px;
+}
+
+/*=====================Our Programs======================*/
+.ourPrograms_container{
+    display: grid;
+    justify-content: center;
+}
+.ourPrograms_list{
+    padding: 0rem 5rem;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+
+}
+
+.our_Programs_Item{
+    height: 28rem;
+    border-radius: 7rem;
+    overflow: hidden;
+    box-shadow: -10px -10px 15px #ffff,
+                10px 10px 15px #aeaec0;
+    transition: all .3s ease-in-out;
+}
+.our_Programs_Item:hover{
+    box-shadow: inset -10px -10px 15px #ffff,
+                inset 10px 10px 15px #aeaec0;
+                
+}
+.our_Programs_Item a{
+
+    border-radius: 7rem;
+}
+
+.our_Programs_Item a:hover{
+    background: var(--variant-color-primary);
+    padding: 5px;
+    color: var(--text-color-variant);
+}
+
+.our_Programs_Item_Image{
+    height: 20rem;
+    border-radius: 3rem;
+    box-shadow: -10px -10px 15px #ffff,
+                10px 10px 15px #aeaec0;
+    overflow: hidden;
+}
+
+.our_Programs_Item_Content{
+    padding: 0rem 2rem;
+}
+.our_Programs_Item_Content a{
+    display: inline-block;
+    color: var(--main-color);
+}
+.our_Programs_Item_Content h4{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+
+/*=====================Why us======================*/
+.whyUs_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -8rem;
+    gap: 5rem;
+    padding: 0px 50px;
+}
+.whyUS_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+.whyUs_left{
+    color: var(--main-color);
+    margin-bottom: 1rem;
+
+}
+
+.whyUs_left p{
+    margin: 0.5rem 0 2.5rem;
+    text-indent: 50px;
+}
+.whyUs_right{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+.whyUs_item{
+    padding: 2rem;
+    border-radius: 7rem;
+    text-align: center;
+    box-shadow: -10px -10px 15px #ffff,
+                10px 10px 15px #aeaec0;
+    transition: all .3s ease-in-out;
+}
+
+.whyUs_item:hover{
+    box-shadow: inset -10px -10px 15px #ffff,
+                inset 10px 10px 15px #aeaec0;
+}
+
+.whyUs_item span{
+    background: var(--main-color);
+    width: 3.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 1.5rem;
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    margin-inline: auto;
+    background-color: #71bf7e;
+
+}
+.whyUs_item:nth-child(2) span{
+    background: #bf7171;
+}
+
+.whyUs_item:nth-child(3) span{
+    background: #71aebf;
+}
+
+.whyUs_item:nth-child(4) span{
+    background: #cccecc;
+}
+.whyUs_item h4{
+    margin: 2rem 0 0.6rem;
+
+}
+
+/*=====================Our Process======================*/
+.our_Process{
+    text-align: center;
+    margin-top: -5rem;
+    
+}
+.ourProcess_container{
+    display: grid;
+    grid-template-rows: repeat(2);
+    justify-content: center;
+    
+
+}
+.ourProcess_list p{
+    text-align: center;
+    
+}
+.ourProcess_list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 7rem;
+    gap: 4rem;
+}
+.ourProcess_item{
+    padding: 3rem 2rem;
+    border-radius: 7rem;
+    box-shadow: -10px -10px 15px #ffff,
+                10px 10px 15px #aeaec0;
+    background-color: #daf7e2;
+    
+}
+.ourProcess_item:hover{
+    box-shadow: inset -10px -10px 15px #ffff,
+                inset 10px 10px 15px #aeaec0;
+}
+
+.ourProcess_item:nth-child(2){
+    background: #f7dada;
+}
+
+.ourProcess_item:nth-child(3){
+    background: #e0daf7;
+}
+
+.ourProcess_item:nth-child(4){
+    background: #daf4f7;
+}
+.our_Process_item h4{
+    margin: 2rem 0 0.5rem;
+}
+.ourProcess_item span{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    
+
+}
+.ourProcess_item h2{
+    position: absolute;
+    margin: -70px 20px;
+    width: 4.5rem;
+    aspect-ratio: 1/1;
+    display: grid;
+    border-radius: 7rem;
+    place-items: center;
+
+    background: white;
+}
+
+/*=====================Our Package======================*/
+
+.packages_container{
+    display: grid;
+    justify-content: center;
+
+}
+.packages_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: max-content;
+    margin: 4rem auto 2rem;
+}
+
+.packages_buttons button{
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    box-shadow: -10px -10px 15px #ffff,
+                10px 10px 15px #aeaec0;
+    background-color: #e9e9e9;
+    color: var(--main-color);
+
+}
+.packages_buttons button.active{
+    box-shadow: inset -10px -10px 15px #ffff,
+    inset 10px 10px 15px #aeaec0;
+
+}
+.packages_buttons button:hover{
+    box-shadow: inset -10px -10px 15px #ffff,
+    inset 10px 10px 15px #aeaec0;
+
+}
+
+table{
+    width: 100%;
+}
+
+thead th{
+    padding: 1rem;
+    text-align: left;
+}
+
+tbody td{
+    padding: 1rem;
+    animation: identifier 2s ease forwards;
+}
+tbody tr{
+    animation: identifier 1s ease forwards;
+}
+
+tbody tr:nth-child(odd){
+    background: white;
+}
+
+@keyframes identifier{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+/*=====================Testimonials======================*/
+
+.swiper-wrapper{
+    margin-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.swiper-slide{
+    padding: 2rem 2.5rem;
+    border-radius: 3rem;
+    box-shadow: -10px -10px 15px #ffff,
+                10px 10px 15px #aeaec0;
+    transition: all .6s ease;
+}
+.swiper-slide:hover{
+    box-shadow: inset -10px -10px 15px #ffff,
+                inset 10px 10px 15px #aeaec0;
+}
+.testimonial_client{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.testimonial_client_image{
+    width: 3rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.swiper-pagination-bullet-active{
+
+}
+
+
+
+/*=====================Media Queries(Small Screens)======================*/
+
+@media screen and (max-width: 600px){
+    section{
+        padding: 7rem 0;
+    }
+
+    .hero{
+
+        padding-top: 8.5rem;
+
+    }
+
+    .hero_content{
+        width: 100%;
+    }
+    .hero_content p{
+        padding: 0px 20px;
+    }
+    .hero_images{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 3.5rem;
+        padding: 0px 30px;
+        
+    }
+
+    .hero_image{
+        border-radius: 5rem;
+        width: 100%;
+        box-shadow: none;
+
+    }
+
+    .hero_image:nth-child(1),
+    .hero_image:nth-child(3),
+    .hero_image:nth-child(5){
+        display: none;
+    }
+    .hero_cta{
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    .about{
+        padding: 30px;
+     
+    }
+    .about_container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+
+    }
+    .about .section_header{
+        text-align: center;
+    }
+    .about_left{
+        border-radius: 3rem;
+        box-shadow: none;
+    
+
+    }
+   .about_right{
+        text-align: center;
+    }
+
+    .ourPrograms_list{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 20px; 
+        gap: 1rem;
+    }
+    .our_Process_item{
+        width: 80%;
+        margin-inline: auto;
+    }
+    .whyUs_right{
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin-inline: auto;
+
+    }
+    .whyUs_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 1rem;
+        gap: 5rem;
+        padding: 0px 50px;
+        text-align: center;
+    }
+
+    .ourProcess_list{
+        grid-template-columns: 1fr;
+    }
+    .packages_container {
+       padding: 0px 20px;
+    }
+    .packages_buttons{
+        flex-direction: column;
+        
+    }
+
+    .packages tr{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        
+    }
+    .packages td, .packages th{
+        padding: 0.7rem;
+        
+    }
+    .testimonials{
+        padding: 0px 20px;
+    }
+ 
+}

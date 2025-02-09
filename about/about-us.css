@@ -1,0 +1,112 @@
+.page_header{
+    background: url(../img/graduate7.avif) center center/cover;
+
+}
+
+.about_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    padding: 3rem 3rem;
+    margin-bottom: 5rem ;
+    text-indent: 50px;
+}
+.about_container h2, 
+.about_container span{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #0d1433;
+}
+.about_container span{
+    color: #020469;
+}
+
+.about_image{
+    border-radius: 7rem;
+    overflow: hidden;
+    box-shadow: -10px -10px 15px #ffff,
+                10px 10px 15px #aeaec0;
+    border: 1px solid #aeaec0;
+    background: var(--main-color);
+    transition: all .6s ease-in-out;
+}
+
+.about_image:hover{
+    box-shadow: inset -10px -10px 15px #ffff,
+    inset 10px 10px 15px #aeaec0;
+}
+
+.about_story{
+    margin-top: 1rem;
+}
+
+.instructors{
+    padding: 7rem 0;
+    text-align: center;
+    padding: 0px 50px;
+    margin-bottom: 2rem;
+}
+.instructors_container{
+    display: grid;
+    justify-content: center;
+
+}
+
+.instructors h2, .instructors p{
+    text-align: center;
+}
+
+.instructors_list{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 5rem;
+}
+
+.instructor{
+    border-radius: 7rem;
+    overflow: hidden;
+    box-shadow: -10px -10px 15px #ffff,
+                10px 10px 15px #aeaec0;
+    background: var(--main-color);
+    text-align: center;
+}
+
+.instructor:hover{
+    box-shadow: inset -10px -10px 15px #ffff,
+    inset 10px 10px 15px #aeaec0;
+}
+
+.instructor_image{
+    height: 17rem;
+    overflow: hidden;
+    border-radius: 3rem;
+}
+
+.instructors h4{
+    margin: 1.5rem 0 0.6rem;
+}
+
+.instructors p{
+    padding-bottom: 2rem;
+}
+
+/*=====================Media Queries(Small Screens)======================*/
+
+@media screen and (max-width: 600px){
+   .about_container{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+   }
+
+   .about_image{
+    border-radius: 3rem;
+    box-shadow: none;
+   }
+
+   .instructors_list{
+    gap: 2.4rem;
+    width: 80%;
+    margin-inline: auto;
+   }
+}

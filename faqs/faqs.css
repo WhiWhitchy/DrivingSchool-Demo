@@ -1,0 +1,81 @@
+.page_header{
+    background: url(../img/practical1.jpg) center center/cover;
+}
+
+.faqs{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50vw;
+    margin-bottom: 7rem;
+    padding: 0px 30px;
+
+
+}
+.container_faqs{
+    padding: 0px 30px;
+}
+.faq{
+    background: white;
+    width: 100%;
+    cursor: pointer;
+    align-self: flex-start;
+    border-radius: 2rem;
+    transition: all .6s ease;
+
+      
+}
+
+.faq_head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    margin-bottom: 20px;
+    
+}
+
+.faq_head i{
+    font-size: 1.6rem;
+
+}
+
+.faq p{
+    padding: 1rem 2rem;
+    border-top: 2px solid #aeaec0;
+    display: none;
+}
+
+.faq.show{
+    background: white;
+    color: black;
+}
+
+.faq.show h5{
+    color: black;
+}
+
+.faq.show p{
+    display: block;
+}
+
+.faqs a{
+    align-self: center;
+    margin-top: 2rem;
+    
+}
+.btn{
+    margin-bottom: 20px;
+    
+}
+.btn_a{
+    display: flex;
+    justify-content: center;
+}
+
+@media  screen and (max-width: 600px){
+    .faqs{
+        width: 70%;
+        margin: 4rem auto;
+    }
+}

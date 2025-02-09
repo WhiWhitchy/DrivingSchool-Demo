@@ -1,0 +1,175 @@
+.page_header{
+    background: url(../img/graduate1.jpg) center center/cover;
+}
+
+.programs_container{
+    padding: 0px 50px;
+}
+
+.programs_menu{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(14rem, 1fr));
+    gap: 1.5rem;
+}
+
+.program{
+    display: flex;
+    text-align: left;
+    border-radius: 3rem;
+    overflow: hidden;
+    box-shadow: -10px -10px 15px #ffff,
+    10px 10px 15px #aeaec0;
+    margin-bottom: 5rem;
+
+ 
+}
+
+.program.active{
+    box-shadow: inset -10px -10px 15px #ffff,
+                inset 10px 10px 15px #aeaec0;
+}
+
+.program_image{
+    height: 100%;
+    width: 12rem;
+}
+
+.program_info{
+    padding: 1rem;
+}
+
+.program_info p{
+    font-size: 0.85rem;
+    margin: 0.8rem 0 1.3rem;
+}
+
+.program_info small{
+    display: block;
+    font-size: 0.7rem;
+    color: #020469;
+}
+
+.program small{
+    transition: all .6s ease-in-out;
+}
+
+.program:hover small{
+    letter-spacing: 2px;
+}
+
+.programDetail_container{
+    display: grid;
+    gap: 3rem;
+
+}
+
+@keyframes identifier{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.programDetails_container{
+    padding: 0px 50px;
+    align-items: start;
+    animation: identifier 2s ease forwards;
+
+}
+.programDetail_left{
+    width:100%;
+    padding-left:50px;
+}
+.programDetail_left > p{
+    margin: 0.5rem 0 2rem;
+}
+
+.programDetail_images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+}
+.programDetail_images img{
+    border-radius: 1rem;
+}
+
+.programDetail_left article{
+    background: white;
+    border-radius: 7rem;
+    padding: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.programDetail_left h5{
+     margin-bottom: 0.6rem;
+
+}
+
+.programDetail_right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    width: 90%;
+    padding-left:50px;
+
+
+}
+
+.programDetail_right article{ 
+    background: white;
+    padding: 1.5rem;
+    border-radius: 3rem;
+}
+.programDetail_right article p{
+    margin-top: 0.5rem;
+}
+
+.program_right h4{
+    color: #020469;
+}
+
+.programDetail_right h2{
+    font-weight: 600;
+}
+
+.programDetail_right div{
+    margin-top: 1.5rem;
+
+}
+.btn_secondary{
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 700px){
+  
+    .program{
+        margin-bottom: 20px;
+    }
+    .programs_menu{
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.1rem;
+    }
+
+    .programDetail_container{
+        grid-template-columns: 1fr;
+        
+    }
+
+    .programDetail_images{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+     
+    }
+    .programDetail_right{
+     
+ 
+    
+    }
+}
